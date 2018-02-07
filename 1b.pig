@@ -1,3 +1,4 @@
+--1b) Find top 5 job titles who are having highest avg growth in applications.[ALL]
 h1b_final = load '/home/hduser/Downloads/project' using PigStorage('\t') as (sno:int, case_status:chararray, emp_name:chararray, soc_name:chararray, job_title:chararray, full_time_pos:chararray, wage:long, year:chararray, worksite:chararray, longitude:double, lattitude:double);
 
 filterjob = filter h1b_final by year=='2011';
